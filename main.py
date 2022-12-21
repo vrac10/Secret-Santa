@@ -1,5 +1,4 @@
 import smtplib,ssl
-import functools
 import random
 names = {'Rahdwgdwgudwgdul' : 'rachit.prince11@gmail.com', 'Radwdiwhdiwhdiwm' : 'secretsanta.py12@gmail.com', 'Rachdit' : 'vrachit106@gmail.com'}
 name = random.sample(list(names.keys()),k=len(names))
