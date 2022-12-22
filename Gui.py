@@ -50,15 +50,25 @@ def delete_participant():
         x.append(0)
         
 
-    if a > 1:
+    elif a > 1:
         names_dict.popitem()
         z[a-1].destroy()
         z.pop(a-1)
         x.pop()
+
+    else:
+        mb.showerror(message="No names added!")
         
 def send_mail():
     if mb.askyesno(message="Are you sure you want to submit?"):
         mailSend(names_dict)
+        label_Drop.destroy()
+        for i in z:
+            i.destroy()
+        z.clear()
+        
+
+
     
 
     
